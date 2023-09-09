@@ -3,9 +3,9 @@ from django.db import models
 
 # Create your models of University Classes
 class UniversityCampus(models.Model):
-    title = models.CharField(max_length=60, default="", blank=True, null=False)
-    duration = models.CharField(max_length=60, default="", blank=True, null=False)
-    campus_id = models.IntegerField(default="", blank=True, null=False)
+    name = models.CharField(max_length=60, default="", blank=True, null=False)
+    state = models.CharField(max_length=60, default="", blank=True, null=False)
+    campus = models.IntegerField(default="", blank=True, null=False)
 
     # Creates model manager
     object = models.Manager()
