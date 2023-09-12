@@ -12,7 +12,7 @@ class UniversityCampus(models.Model):
 
     # Displays the object output values in the form of a string
     def __str__(self):
-        display_campus = '{0.name}: {0.state}'
+        display_campus = '{0.name}: {0.state} '
         return display_campus.format(self)
 
     # removes added 's' that Django adds to the model name in the browser display
